@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TestAudioRecord</string>
+    <string-array name="selections">
+        <item>VOICE_RECOGNITION_2mic_4ref</item>
+        <item>VOICE_COMMUNICATION_2procmic</item>
+        <item>MIC_2mic</item>
+    </string-array>
+
+    <string name="title">AUDIO測試工具</string>
+    <string name="title_sub_author">author  : steven.gao</string>
+    <string name="title_sub_version">version : V1.0</string>
+
+    <string name="audio_record">音頻錄製</string>
+    <string name="audio_track">音頻播放</string>
+
+    <string name="sample_rate_title">采樣頻率</string>
+    <string name="audio_source_title">音頻來源</string>
+    <string name="channel_config">聲道配置</string>
+    <string name="audio_format">采樣位數</string>
+    <string name="buffer_size">緩衝大小</string>
+    <string name="record_save_path">存儲路徑</string>
+    <string name="record_start">開始錄音</string>
+    <string name="record_stop">停止錄音</string>
+</resources>

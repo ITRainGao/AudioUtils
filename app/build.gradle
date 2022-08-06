@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.appId.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.appVersion.versionCode
+        versionName rootProject.appVersion.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def dep = rootProject.ext.dependencies
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation dep["appcompat"]
+    implementation dep["constraint"]
+
+    implementation project(":audio-player")
+    implementation project(":audio-recorder")
+}

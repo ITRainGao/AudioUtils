@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="title_bar_height">60dp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_subtitle">14sp</dimen>
+    <dimen name="title_info_img">25dp</dimen>
+    <dimen name="text_size_common">16sp</dimen>
+
+    <dimen name="spinner_line_nagative">8dp</dimen>
+    <dimen name="spinner_bg_conor">5dp</dimen>
+    <dimen name="spinner_title_width">130dp</dimen>
+    <dimen name="spinner_title_height">30dp</dimen>
+    <dimen name="spinner_value_width">225dp</dimen>
+
+    <dimen name="common_nagative">15dp</dimen>
+</resources>

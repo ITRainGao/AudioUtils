@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    def config = rootProject.ext.android
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode rootProject.recorderVersion.versionCode
+        versionName rootProject.recorderVersion.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+def dep = rootProject.ext.dependencies
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dep["appcompat"]
+    implementation project(":base")
+}
